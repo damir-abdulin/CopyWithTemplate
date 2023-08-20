@@ -1,0 +1,8 @@
+builders:
+  copy_with_template:
+    import: 'package:copy_with_template/copy_with_template.dart'
+    builder_factories: ["copyableBuilder"]
+    build_extensions: {".dart": [".g.part"]}
+    auto_apply: dependents
+    build_to: cache
+    applies_builders: ["source_gen:combining_builder"]

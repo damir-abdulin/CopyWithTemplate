@@ -1,0 +1,12 @@
+include: package:very_good_analysis/analysis_options.yaml
+
+analyzer:
+  exclude:
+    - example/**
+  language:
+    strict-casts: false
+    strict-raw-types: true
+  errors:
+    unawaited_futures: ignore
+    sort_constructors_first: ignore
+    public_member_api_docs: ignore
